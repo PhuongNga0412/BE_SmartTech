@@ -17,7 +17,7 @@ const paypalRoutes = require("./routes/PaypalRouter");
 app.use(
     cors({
         origin: "*",
-
+        credentials: true,
         // origin: "http://localhost:5173",
         // origin: "https://fe-smart-tech.vercel.app/",
     })
