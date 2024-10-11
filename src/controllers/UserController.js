@@ -138,9 +138,13 @@ const getDetailsUser = async (req, res) => {
 };
 
 const refreshToken = async (req, res) => {
-    console.log("req.cookies.refresh_token", req.headers.refresh_token);
     try {
         let token = req.headers.token.split("")[1];
+        console.log(
+            "Test_req.cookies.refresh_token",
+            req.headers.token.split("")[1]
+        );
+
         if (!token) {
             return res.status(200).json({
                 status: "ERR",
