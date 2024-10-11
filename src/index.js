@@ -16,7 +16,8 @@ const paypalRoutes = require("./routes/PaypalRouter");
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        // origin: "http://localhost:5173",
+        origin: "https://fe-smart-tech.vercel.app/",
     })
 );
 app.use(express.json({ limit: "50mb" }));
